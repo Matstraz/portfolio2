@@ -1,11 +1,11 @@
-import { css } from "aphrodite";
-import styles from "./Animations";
+import { Route, Routes } from "react-router-dom";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
-    <div>
-      <p className={css(styles.fadeInRight)}>prova</p>;
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+    </Routes>
   );
 }
 

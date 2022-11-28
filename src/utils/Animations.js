@@ -6,9 +6,25 @@ const styles = StyleSheet.create({
     animationName: bounce,
     animationDuration: "1s",
   },
-  fadeInRight: {
+  fadeInRight1: {
     animationName: fadeInRight,
     animationDuration: "1s",
+  },
+  fadeInRight2: {
+    animationName: fadeInRight,
+    animationDuration: "2s",
+  },
+  fadeInRight3: {
+    animationName: fadeInRight,
+    animationDuration: "2.5s",
+  },
+  fadeInRight4: {
+    animationName: fadeInRight,
+    animationDuration: "3s",
+  },
+  fadeInRight5: {
+    animationName: fadeInRight,
+    animationDuration: "3.5s",
   },
 });
 

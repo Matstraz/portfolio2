@@ -1,0 +1,58 @@
+{
+  "homepage": {
+    "welcome": {
+      "message": "Hello, I'm Matteo",
+      "button": "Enter"
+    },
+    "entered": {
+      "home": "Home",
+      "about": "About me",
+      "languages": "Languages & Tools",
+      "projects": "Projects",
+      "contacts": "Contacts"
+    }
+  },
+
+  "bodyContent": {
+    "about": {
+      "title": "About Me",
+      "description": "I am a web developer from Palermo, Sicily, Italy. I have a master's degree in geology and started developing in 2022. I have began studying computer science driven by a passion for IT and learnt how to create interactive web applications using the latest technologies; I have leveraged 'agile' method in many of my projects.",
+      "tools": "Languages & Tools",
+      "education": {
+        "title": "Education",
+        "course": "Web Developer Course",
+        "content": "Intensive course to become a full stack web developer. In the first part of the course I studied the necessary basics of web development, learning how to use Html, CSS and Git. The second part focused on JavaScript, FE development through React.Js and BE development with Node.Js; I also gained expertise with TypeScript.",
+        "internship": "Internship",
+        "content2": "Internship, INGV, Palermo.",
+        "master": "Master's degree",
+        "content3": "Master's degree in geology, University of Palermo.",
+        "bachelor": "Bachelor's degree",
+        "content4": "Bachelor's degree in geology, University of Palermo."
+      },
+      "experience": {
+        "title": "Experience",
+        "job1": "Junior Full Stack Developer",
+        "content": "Practical experience working in teams, aimed at developing web applications with 'agile' methodology through HTML, CSS, JS, React and Node.",
+        "job2": "Teleseller",
+        "content2": "Outbound teleselling, collecting and recording customer data during phone calls.",
+        "job3": "Back-office administrator",
+        "content3": "Client administration and secretarial management.",
+        "job4": "Sales agent",
+        "content4": "Sales activities to individuals and businesses."
+      }
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "formTitle": "Leave a Message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "send": "Send",
+      "alert": "Message sent successfully"
+    }
+  }
+}

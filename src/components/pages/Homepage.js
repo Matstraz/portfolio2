@@ -1,11 +1,19 @@
 import { css } from "aphrodite";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import styles from "../../utils/Animations";
+import i18n from "../../utils/i18n";
 
 export default function Homepage() {
   const [enter, setEnter] = useState(false);
+
+  const { t } = useTranslation();
+
+  function handleLanguage(event) {
+    i18n.changeLanguage(event.target.value);
+  }
 
   function handleEnter() {
     setEnter(true);
@@ -15,8 +23,8 @@ export default function Homepage() {
     <div
       className={
         enter
-          ? "h-screen bg-slate-800 flex flex-col md:flex-row text-slate-200"
-          : " h-screen bg-slate-800 flex flex-col justify-center items-center text-slate-200 gap-3 text-3xl md:text-5xl"
+          ? "h-screen bg-slate-800 flex flex-col md:flex-row text-slate-200 relative"
+          : " h-screen bg-slate-800 flex flex-col justify-center items-center text-slate-200 gap-3 text-3xl md:text-5xl relative"
       }
     >
       <div
@@ -24,7 +32,7 @@ export default function Homepage() {
           enter ? "hidden" : "flex flex-col justify-center items-center"
         }
       >
-        <h1>Hello, I'm Matteo</h1>
+        <h1>{t("homepage.welcome.message")}</h1>
         <h1 className=" text-center">
           <Typewriter
             words={[
@@ -45,7 +53,7 @@ export default function Homepage() {
           className="border-2 px-3 py-1 text-3xl mt-6"
           onClick={handleEnter}
         >
-          Enter
+          {t("homepage.welcome.button")}
         </button>
       </div>
       {enter && (
@@ -56,7 +64,7 @@ export default function Homepage() {
           )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pb-5 text-4xl md:text-8xl`}
           onClick={() => setEnter(false)}
         >
-          Home
+          {t("homepage.entered.home")}
         </Link>
       )}
       {enter && (
@@ -66,7 +74,7 @@ export default function Homepage() {
             styles.fadeInRight1
           )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pb-5 text-4xl md:text-8xl`}
         >
-          About Me
+          {t("homepage.entered.about")}
         </Link>
       )}
       {enter && (
@@ -76,7 +84,7 @@ export default function Homepage() {
             styles.fadeInRight3
           )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pb-5 text-4xl md:text-8xl`}
         >
-          Languages & Tools
+          {t("homepage.entered.languages")}
         </Link>
       )}
       {enter && (
@@ -86,7 +94,7 @@ export default function Homepage() {
             styles.fadeInRight4
           )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pb-5 text-4xl md:text-8xl`}
         >
-          Projects
+          {t("homepage.entered.projects")}
         </Link>
       )}
       {enter && (
@@ -96,9 +104,16 @@ export default function Homepage() {
             styles.fadeInRight5
           )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pb-5 text-4xl md:text-8xl`}
         >
-          Contacts
+          {t("homepage.entered.contacts")}
         </Link>
       )}
+      <select
+        className="absolute top-5 right-5 bg-slate-700 "
+        onClick={handleLanguage}
+      >
+        <option value="en">English</option>
+        <option value="it">Italiano</option>
+      </select>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { StyleSheet } from "aphrodite";
-import { bounce, fadeInRight } from "react-animations";
+import { bounce, fadeInRight, tada } from "react-animations";
 
 const styles = StyleSheet.create({
   bounce: {
@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
   fadeInRight5: {
     animationName: fadeInRight,
     animationDuration: "3.5s",
+  },
+  tada2: {
+    animationName: tada,
+    animationDuration: "3.5s",
+    animationIterationCount: "infinite",
   },
 });
 

@@ -12,6 +12,13 @@
       "contacts": "Contatti"
     }
   },
+  "navbar": {
+    "home": "Home",
+    "about": "Curriculum",
+    "languages": "Linguaggi",
+    "projects": "Progetti",
+    "contacts": "Contatti"
+  },
   "bodyContent": {
     "about": {
       "title": "Su di me",

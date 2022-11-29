@@ -79,7 +79,7 @@ export default function Homepage() {
       )}
       {enter && (
         <Link
-          to="/tools"
+          to="/languages"
           className={`${css(
             styles.fadeInRight3
           )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pb-5 text-4xl md:text-8xl`}

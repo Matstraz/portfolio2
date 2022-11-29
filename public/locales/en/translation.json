@@ -12,6 +12,13 @@
       "contacts": "Contacts"
     }
   },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "languages": "Languages",
+    "projects": "Projects",
+    "contacts": "Contacts"
+  },
 
   "bodyContent": {
     "about": {

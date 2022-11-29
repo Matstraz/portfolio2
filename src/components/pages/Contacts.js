@@ -6,7 +6,7 @@ export default function Contacts() {
     i18n.changeLanguage(event.target.value);
   }
   return (
-    <div className="bg-slate-800 min-h-screen">
+    <div className="bg-slate-800 min-h-screen text-slate-200">
       <Navbar contacts />
       <div className="relative">
         <select

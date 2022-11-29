@@ -6,7 +6,7 @@ export default function Navbar({ about, languages, projects, contacts }) {
   const { t } = useTranslation();
 
   return (
-    <nav className="bg-slate-800 text-slate-200 text-2xl flex justify-center items-center border-b gap-6 py-2">
+    <nav className="bg-slate-800 text-2xl flex justify-center items-center border-b gap-8 py-2">
       <Link to="/" className={"flex gap-1 items-center"}>
         {icons.home}
         {t("navbar.home")}

@@ -6,4 +6,23 @@
   .vertical {
     writing-mode: sideways-lr;
   }
+  .tl {
+    transform: translateX(140px) translateX(160px);
+  }
+
+  .tr {
+    transform: translateX(140px) rotate(72deg) translateX(180px);
+  }
+
+  .bl {
+    transform: translateX(140px) rotate(144deg) translateX(180px) rotate(180deg);
+  }
+
+  .bot {
+    transform: translateX(140px) rotate(216deg) translateX(180px) rotate(180deg);
+  }
+
+  .br {
+    transform: translateX(140px) rotate(288deg) translateX(180px);
+  }
 }

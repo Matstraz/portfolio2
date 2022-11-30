@@ -7,11 +7,14 @@ import ubisoft from "../../../assets/pics/ubisoft.jpg";
 import icons from "../../../utils/Icons";
 import ImageCarouselZoom from "./ImageCarouselZoom";
 import Navbar from "../../common/Navbar";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
   function handleLanguage(event) {
     i18n.changeLanguage(event.target.value);
   }
+
+  const { t } = useTranslation();
 
   const bazaarData = (
     <div className="flex gap-4">
@@ -98,9 +101,10 @@ export default function Projects() {
       <div className="h-fit">
         <Navbar projects />
       </div>
-      <div className="relative h-5/6 flex justify-center items-center">
-        <ImageCarouselZoom imagesData={imagesData} />
-
+      <div className="relative">
+        <h1 className="text-4xl p-5">
+          {icons.verticalLines} {t("projects.title")}
+        </h1>{" "}
         <select
           className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
           onClick={handleLanguage}
@@ -108,6 +112,10 @@ export default function Projects() {
           <option value="en">English</option>
           <option value="it">Italiano</option>
         </select>
+      </div>
+
+      <div className=" h-5/6 flex justify-center items-center">
+        <ImageCarouselZoom imagesData={imagesData} />
       </div>
     </div>
   );

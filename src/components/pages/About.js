@@ -10,7 +10,7 @@ export default function About() {
     i18n.changeLanguage(event.target.value);
   }
   return (
-    <div className="bg-slate-800 min-h-screen text-slate-200">
+    <div className="bg-slate-800 min-h-screen text-slate-200 text-justify">
       <div className="h-min">
         <Navbar about />
       </div>
@@ -19,13 +19,13 @@ export default function About() {
           {icons.verticalLines} {t("about.title")}
         </h1>
         <div className="mt-5 text-lg"> {t("about.description")}</div>
-        <div className="flex w-full mt-10 gap-5">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row w-full mt-10 gap-5">
+          <div className="lg:w-1/2">
             <div className="text-3xl">
               {icons.verticalLines} {t("about.education.title")}
             </div>
-            <div className="flex w-full mt-5">
-              <div className="w-1/2 border-l px-3">
+            <div className="flex flex-col lg:flex-row w-full mt-5">
+              <div className="lg:w-1/2 border-l px-3">
                 <div>
                   {icons.graduation} &nbsp; 2022
                   <p className="font-bold mt-1">
@@ -50,7 +50,7 @@ export default function About() {
                   <p className="mt-3">{t("about.education.content3")}</p>
                 </div>
               </div>
-              <div className="w-1/2 border-l px-3">
+              <div className="lg:w-1/2 border-l px-3">
                 <div>
                   {icons.graduation} &nbsp; 2013
                   <p className="font-bold mt-1">
@@ -62,13 +62,13 @@ export default function About() {
             </div>
           </div>
 
-          <div className="w-1/2 flex flex-col justify-between">
+          <div className="lg:w-1/2 flex flex-col justify-between mt-7 lg:mt-0">
             <div>
               <h1 className="text-3xl">
                 {icons.verticalLines} {t("about.experience.title")}
               </h1>
-              <div className="flex w-full mt-3 ">
-                <div className="w-1/2 border-l px-3">
+              <div className="flex flex-col lg:flex-row w-full mt-3  ">
+                <div className="lg:w-1/2 border-l px-3">
                   <div>
                     {icons.job} &nbsp; 02/2022 - present
                     <p className="font-bold mt-1">
@@ -93,7 +93,7 @@ export default function About() {
                     <p className="mt-3">{t("about.experience.content3")}</p>
                   </div>
                 </div>
-                <div className="w-1/2 border-l px-3">
+                <div className="lg:w-1/2 border-l px-3">
                   <div>
                     {icons.job} &nbsp; 03/2013 - 12/2014
                     <p className="font-bold mt-1">
@@ -107,14 +107,14 @@ export default function About() {
 
             <a
               href="https://drive.google.com/file/d/17ZzOQQ4Fyw3jpXCrhjPoMi-D8YMUAmwq/view?usp=sharing"
-              className="self-center border-2 px-3 py-1 text-xl"
+              className="self-center border-2 px-3 py-1 text-xl mt-8 lg:mt-auto"
             >
               {t("about.download")}
             </a>
           </div>
         </div>
         <select
-          className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
+          className="hidden lg:block absolute top-5 right-5 bg-slate-700 py-1"
           onClick={handleLanguage}
         >
           <option value="en">English</option>

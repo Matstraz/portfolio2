@@ -5,12 +5,13 @@ export default function Contacts() {
   function handleLanguage(event) {
     i18n.changeLanguage(event.target.value);
   }
+
   return (
     <div className="bg-slate-800 min-h-screen text-slate-200">
       <Navbar contacts />
       <div className="relative">
         <select
-          className="absolute top-5 right-5 bg-slate-700 "
+          className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
           onClick={handleLanguage}
         >
           <option value="en">English</option>

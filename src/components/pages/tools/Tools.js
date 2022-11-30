@@ -16,7 +16,7 @@ export default function Tools() {
         <DynamicIconCloud />
 
         <select
-          className="absolute top-5 right-5 bg-slate-700 "
+          className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
           onClick={handleLanguage}
         >
           <option value="en">English</option>

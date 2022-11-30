@@ -102,7 +102,7 @@ export default function Projects() {
         <ImageCarouselZoom imagesData={imagesData} />
 
         <select
-          className="absolute top-5 right-5 bg-slate-700 "
+          className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
           onClick={handleLanguage}
         >
           <option value="en">English</option>

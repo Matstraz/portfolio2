@@ -8,12 +8,13 @@ export default function ImageCarouselZoom({ imagesData }) {
   return (
     <>
       <Carousel
-        showThumbs={true}
+        showThumbs={false}
         autoPlay={true}
-        interval={2000}
+        interval={2250}
         infiniteLoop={true}
         showArrows={true}
         showIndicators={false}
+        className="w-full"
       >
         {imagesData.map((obj, index) => (
           <div
@@ -23,7 +24,8 @@ export default function ImageCarouselZoom({ imagesData }) {
             <Zoom>
               <img
                 src={obj.image}
-                style={{ maxHeight: "330px", width: "auto" }}
+                style={{ maxHeight: "400px", width: "auto" }}
+                className="px-6"
                 alt="pic"
               />
             </Zoom>

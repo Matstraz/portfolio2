@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import styles from "../../utils/Animations";
 import i18n from "../../utils/i18n";
+import icons from "../../utils/Icons";
 
 export default function Homepage() {
   const [enter, setEnter] = useState(false);
@@ -108,12 +109,33 @@ export default function Homepage() {
         </Link>
       )}
       <select
-        className="absolute top-5 right-5 bg-slate-700 "
+        className="absolute top-5 right-5 bg-slate-700 py-1"
         onClick={handleLanguage}
       >
         <option value="en">English</option>
         <option value="it">Italiano</option>
       </select>
+
+      <div className="flex gap-4 absolute top-5 left-5 justify-between items-center">
+        <a
+          href="https://www.linkedin.com/in/matteo-strazzera-ba26781b8/"
+          className="flex justify-center items-center"
+        >
+          {icons.linkedin}
+        </a>
+        <a
+          href="https://github.com/Matstraz"
+          className="flex justify-center items-center"
+        >
+          {icons.github}
+        </a>
+        <a
+          href="https://www.facebook.com/mat.strazzera"
+          className="flex justify-center items-center"
+        >
+          {icons.facebook}
+        </a>
+      </div>
     </div>
   );
 }

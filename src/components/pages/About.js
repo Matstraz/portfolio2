@@ -19,7 +19,7 @@ export default function About() {
           {icons.verticalLines} {t("about.title")}
         </h1>
         <div className="mt-5 text-lg"> {t("about.description")}</div>
-        <div className="flex w-full mt-10">
+        <div className="flex w-full mt-10 gap-5">
           <div className="w-1/2">
             <div className="text-3xl">
               {icons.verticalLines} {t("about.education.title")}
@@ -105,9 +105,12 @@ export default function About() {
               </div>
             </div>
 
-            <button className="self-center border-2 px-3 py-1 text-xl">
+            <a
+              href="https://drive.google.com/file/d/17ZzOQQ4Fyw3jpXCrhjPoMi-D8YMUAmwq/view?usp=sharing"
+              className="self-center border-2 px-3 py-1 text-xl"
+            >
               {t("about.download")}
-            </button>
+            </a>
           </div>
         </div>
         <select

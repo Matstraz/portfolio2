@@ -81,7 +81,7 @@ export default function Contacts() {
               </a>
               <a
                 href="https://www.facebook.com/mat.strazzera "
-                className="bl mdabsolute mt-5 md:mt-"
+                className="bl mdabsolute mt-5 md:mt-0"
               >
                 <img
                   className="rounded-lg "

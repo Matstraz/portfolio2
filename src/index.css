@@ -4,7 +4,8 @@
 
 @media all and (min-width: 768px) {
   .vertical {
-    writing-mode: sideways-lr;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
   }
   .tl {
     transform: translateX(140px) translateX(160px);

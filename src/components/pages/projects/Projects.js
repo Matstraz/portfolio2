@@ -17,16 +17,16 @@ export default function Projects() {
   const { t } = useTranslation();
 
   const bazaarData = (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center items-center">
       <a
         href="https://bazaar-trader.netlify.app/"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         Demo
       </a>
       <a
         href="https://github.com/Matstraz/bazaar_trader/tree/develop"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         {icons.githubMini} Code
       </a>
@@ -34,10 +34,10 @@ export default function Projects() {
   );
 
   const ubisoftData = (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center items-center">
       <a
         href="https://github.com/Matstraz/Ubisoft-Site-Project/tree/develop"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         {icons.githubMini} Code
       </a>
@@ -45,10 +45,10 @@ export default function Projects() {
   );
 
   const finlabData = (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center items-center">
       <a
         href="https://github.com/Matstraz/Finlab-Javascript-Project---Team-3/tree/develop"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         {icons.githubMini} Code
       </a>
@@ -56,16 +56,16 @@ export default function Projects() {
   );
 
   const optionsfyData = (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center items-center">
       <a
         href="https://optionsfy-fe.netlify.app/"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         Demo
       </a>
       <a
         href="https://github.com/Matstraz/Optionsfy-Frontend/"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         {icons.githubMini} Code
       </a>
@@ -73,16 +73,16 @@ export default function Projects() {
   );
 
   const fontanelleData = (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center items-center">
       <a
         href="https://lefontanelle.netlify.app/"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         Demo
       </a>
       <a
         href="https://github.com/Matstraz/agriturismo/tree/develop"
-        className="border-2 px-3 py-1 text-xl mt-6"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
       >
         {icons.githubMini} Code
       </a>
@@ -97,7 +97,7 @@ export default function Projects() {
     { image: ubisoft, links: ubisoftData },
   ];
   return (
-    <div className="bg-slate-800 min-h-screen h-8 text-slate-200">
+    <div className="bg-slate-800 min-h-screen lg:h-screen text-slate-200">
       <div className="h-fit">
         <Navbar projects />
       </div>
@@ -114,8 +114,17 @@ export default function Projects() {
         </select>
       </div>
 
-      <div className=" h-5/6 flex justify-center items-center">
+      <div className="hidden h-5/6 md:flex justify-center items-center">
         <ImageCarouselZoom imagesData={imagesData} />
+      </div>
+
+      <div className="md:hidden h-5/6 grid sm:grid-cols-2 grid-cols-1 p-5 gap-7">
+        {imagesData.map((el) => (
+          <div>
+            {<img src={el.image} alt="Example pic" />}
+            {el.links}
+          </div>
+        ))}
       </div>
     </div>
   );

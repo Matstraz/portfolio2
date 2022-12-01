@@ -116,7 +116,13 @@ export default function Homepage() {
         <option value="it">Italiano</option>
       </select>
 
-      <div className="flex gap-4 absolute top-5 left-5 justify-between items-center">
+      <div
+        className={
+          enter
+            ? "hidden"
+            : "flex gap-4 absolute top-5 left-5 justify-between items-center"
+        }
+      >
         <a
           href="https://www.linkedin.com/in/matteo-strazzera-ba26781b8/"
           className="flex justify-center items-center"

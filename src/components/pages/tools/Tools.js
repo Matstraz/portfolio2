@@ -12,7 +12,7 @@ export default function Tools() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-slate-800 h-screen text-slate-200 flex flex-col">
+    <div className="bg-slate-800 min-h-screen lg:h-screen text-slate-200 flex flex-col">
       <div className="h-min">
         <Navbar languages />
       </div>

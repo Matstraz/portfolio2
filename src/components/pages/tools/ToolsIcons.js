@@ -9,16 +9,14 @@ const useIcons = (slugs) => {
   }, []);
 
   if (icons) {
-    return Object.values(icons.simpleIcons).map(
-      (icon) =>
-        renderSimpleIcon({
-          icon,
-          size: 100,
-          aProps: {
-            onClick: (e) => e.preventDefault(),
-          },
-        }),
-      console.log(icons)
+    return Object.values(icons.simpleIcons).map((icon) =>
+      renderSimpleIcon({
+        icon,
+        size: 100,
+        aProps: {
+          onClick: (e) => e.preventDefault(),
+        },
+      })
     );
   }
 

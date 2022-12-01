@@ -119,8 +119,8 @@ export default function Projects() {
       </div>
 
       <div className="md:hidden h-5/6 grid sm:grid-cols-2 grid-cols-1 p-5 gap-7">
-        {imagesData.map((el) => (
-          <div>
+        {imagesData.map((el, index) => (
+          <div key={el + index}>
             {<img src={el.image} alt="Example pic" />}
             {el.links}
           </div>

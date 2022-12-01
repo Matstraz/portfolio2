@@ -49,6 +49,9 @@
   "projects": {
     "title": "Progetti"
   },
+  "tools": {
+    "title": "Linguaggi & Tools"
+  },
   "contacts": {
     "title": "Contatti",
     "formTitle": "Invia un mesasggio",

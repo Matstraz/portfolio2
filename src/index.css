@@ -27,3 +27,7 @@
     transform: translateX(140px) rotate(288deg) translateX(180px);
   }
 }
+
+.asd {
+  min-height: 100vh;
+}

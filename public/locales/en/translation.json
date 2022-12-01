@@ -50,6 +50,9 @@
   "projects": {
     "title": "Projects"
   },
+  "tools": {
+    "title": "Languages & Tools"
+  },
   "contacts": {
     "title": "Contacts",
     "formTitle": "Leave a Message",

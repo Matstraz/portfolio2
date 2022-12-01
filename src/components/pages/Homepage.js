@@ -62,7 +62,7 @@ export default function Homepage() {
           to="/"
           className={`${css(
             styles.fadeInRight1
-          )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pt-5 text-4xl md:text-8xl`}
+          )} h-1/5 md:w-1/5 md:h-screen border-t border-b md:border-l md:border-r vertical flex justify-center md:justify-start items-center md:pt-5 text-5xl lg:text-8xl`}
           onClick={() => setEnter(false)}
         >
           {t("homepage.entered.home")}
@@ -73,7 +73,7 @@ export default function Homepage() {
           to="/about"
           className={`${css(
             styles.fadeInRight2
-          )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pt-5 text-4xl md:text-8xl`}
+          )} h-1/5 md:w-1/5 md:h-screen border-b md:border-l  md:border-r vertical flex justify-center md:justify-start items-center md:pt-5 text-5xl lg:text-8xl`}
         >
           {t("homepage.entered.about")}
         </Link>
@@ -83,7 +83,7 @@ export default function Homepage() {
           to="/languages"
           className={`${css(
             styles.fadeInRight3
-          )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pt-5 text-4xl md:text-8xl`}
+          )} text-center md:text-start h-1/5 md:w-1/5 md:h-screen border-b md:border-l md:border-r vertical flex justify-center md:justify-start items-center md:pt-5 text-5xl lg:text-8xl`}
         >
           {t("homepage.entered.languages")}
         </Link>
@@ -93,7 +93,7 @@ export default function Homepage() {
           to="/projects"
           className={`${css(
             styles.fadeInRight4
-          )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pt-5 text-4xl md:text-8xl`}
+          )} h-1/5 md:w-1/5 md:h-screen border-b md:border-l md:border-r vertical flex justify-center md:justify-start items-center md:pt-5 text-5xl lg:text-8xl`}
         >
           {t("homepage.entered.projects")}
         </Link>
@@ -103,7 +103,7 @@ export default function Homepage() {
           to="/contacts"
           className={`${css(
             styles.fadeInRight5
-          )} h-1/5 md:w-1/5 md:h-screen border vertical flex justify-center md:justify-start items-center md:pt-5 text-4xl md:text-8xl`}
+          )} h-1/5 md:w-1/5 md:h-screen md:border-l md:border-r vertical flex justify-center md:justify-start items-center md:pt-5 text-5xl lg:text-8xl`}
         >
           {t("homepage.entered.contacts")}
         </Link>

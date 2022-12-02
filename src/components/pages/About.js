@@ -50,7 +50,7 @@ export default function About() {
                   <p className="mt-3">{t("about.education.content3")}</p>
                 </div>
               </div>
-              <div className="lg:w-1/2 border-l px-3">
+              <div className="lg:w-1/2 border-l px-3 pt-10 lg:pt-0">
                 <div>
                   {icons.graduation} &nbsp; 2013
                   <p className="font-bold mt-1">
@@ -93,7 +93,7 @@ export default function About() {
                     <p className="mt-3">{t("about.experience.content3")}</p>
                   </div>
                 </div>
-                <div className="lg:w-1/2 border-l px-3">
+                <div className="lg:w-1/2 border-l px-3 pt-10 lg:pt-0">
                   <div>
                     {icons.job} &nbsp; 03/2013 - 12/2014
                     <p className="font-bold mt-1">

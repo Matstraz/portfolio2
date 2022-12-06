@@ -108,12 +108,13 @@ export default function Homepage() {
           {t("homepage.entered.contacts")}
         </Link>
       )}
-      <select
-        className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
-        onChange={handleLanguage}
-      >
-        <option value="en">English</option>
-        <option value="it">Italiano</option>
+      <select className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1">
+        <option onClick={handleLanguage} value="en">
+          English
+        </option>
+        <option onClick={handleLanguage} value="it">
+          Italiano
+        </option>
       </select>
 
       <div

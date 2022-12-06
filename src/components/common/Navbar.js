@@ -77,12 +77,13 @@ export default function Navbar({ about, languages, projects, contacts }) {
           <div className="absolute top-3 right-3 w-auto bg-slate-800">
             <div className="p-1 bg-gradient-to-t from-myBlue-700 to-myBlue-400 w-full border-2">
               <div className="p-1 pt-2 pb-3 gap-5 flex items-center justify-between border-b">
-                <select
-                  className=" bg-slate-700 w-max py-1"
-                  onChange={handleLanguage}
-                >
-                  <option value="en">English</option>
-                  <option value="it">Italiano</option>
+                <select className=" bg-slate-700 w-max py-1">
+                  <option onClick={handleLanguage} value="en">
+                    English
+                  </option>
+                  <option onClick={handleLanguage} value="it">
+                    Italiano
+                  </option>
                 </select>
                 <div className="flex items-center">
                   <button

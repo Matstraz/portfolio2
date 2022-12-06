@@ -79,7 +79,7 @@ export default function Navbar({ about, languages, projects, contacts }) {
               <div className="p-1 pt-2 pb-3 gap-5 flex items-center justify-between border-b">
                 <select
                   className=" bg-slate-700 w-max py-1"
-                  onClick={handleLanguage}
+                  onChange={handleLanguage}
                 >
                   <option value="en">English</option>
                   <option value="it">Italiano</option>

@@ -9,8 +9,10 @@ import styles from "../../utils/Animations";
 
 export default function Contacts() {
   const { t } = useTranslation();
+  const [language, setLanguage] = useState("en");
 
   function handleLanguage(event) {
+    setLanguage(event.target.value);
     i18n.changeLanguage(event.target.value);
   }
 
@@ -190,13 +192,10 @@ export default function Contacts() {
         <select
           className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
           onChange={handleLanguage}
+          value={language}
         >
-          <option onClick={handleLanguage} value="en">
-            English
-          </option>
-          <option onClick={handleLanguage} value="it">
-            Italiano
-          </option>
+          <option value="en">English</option>
+          <option value="it">Italiano</option>
         </select>
       </div>
       {/* OLD LAYOUT */}

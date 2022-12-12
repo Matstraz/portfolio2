@@ -115,11 +115,11 @@ export default function Projects() {
         </select>
       </div>
 
-      <div className="hidden h-5/6 md:flex justify-center items-center">
+      <div className="hidden h-4/5 lg:flex justify-center items-center">
         <ImageCarouselZoom imagesData={imagesData} />
       </div>
 
-      <div className="md:hidden h-5/6 grid sm:grid-cols-2 grid-cols-1 p-5 gap-7">
+      <div className="lg:hidden h-5/6 grid sm:grid-cols-2 grid-cols-1 p-5 gap-7">
         {imagesData.map((el, index) => (
           <div key={el + index}>
             {<img src={el.image} alt="Example pic" />}

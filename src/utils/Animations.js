@@ -1,29 +1,33 @@
 import { StyleSheet } from "aphrodite";
-import { bounce, fadeInRight, tada } from "react-animations";
+import { bounce, fadeInUp, tada, zoomIn } from "react-animations";
 
 const styles = StyleSheet.create({
   bounce: {
     animationName: bounce,
     animationDuration: "1s",
   },
+  zoom: {
+    animationName: zoomIn,
+    animationDuration: "1s",
+  },
   fadeInRight1: {
-    animationName: fadeInRight,
+    animationName: fadeInUp,
     animationDuration: "1s",
   },
   fadeInRight2: {
-    animationName: fadeInRight,
+    animationName: fadeInUp,
     animationDuration: "2s",
   },
   fadeInRight3: {
-    animationName: fadeInRight,
+    animationName: fadeInUp,
     animationDuration: "2.5s",
   },
   fadeInRight4: {
-    animationName: fadeInRight,
+    animationName: fadeInUp,
     animationDuration: "3s",
   },
   fadeInRight5: {
-    animationName: fadeInRight,
+    animationName: fadeInUp,
     animationDuration: "3.5s",
   },
   tada2: {

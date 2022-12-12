@@ -187,7 +187,10 @@ export default function Contacts() {
             </div>
           </div>
         </div>
-        <select className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1">
+        <select
+          className="hidden md:block absolute top-5 right-5 bg-slate-700 py-1"
+          onChange={handleLanguage}
+        >
           <option onClick={handleLanguage} value="en">
             English
           </option>

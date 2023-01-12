@@ -3,6 +3,7 @@ import bazaar from "../../../assets/pics/bazaar.png";
 import finlab from "../../../assets/pics/finlab.jpg";
 import fontanelle from "../../../assets/pics/fontanelle.jpg";
 import optionsfy from "../../../assets/pics/optionsfy.jpg";
+import eshop from "../../../assets/pics/eshop.png";
 import ubisoft from "../../../assets/pics/ubisoft.jpg";
 import icons from "../../../utils/Icons";
 import ImageCarouselZoom from "./ImageCarouselZoom";
@@ -89,12 +90,30 @@ export default function Projects() {
     </div>
   );
 
+  const eshopData = (
+    <div className="flex gap-4 justify-center items-center">
+      <a
+        href="https://eshopsimulation.netlify.app/"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+      >
+        Demo
+      </a>
+      <a
+        href="https://github.com/Matstraz/E-shop"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+      >
+        {icons.githubMini} Code
+      </a>
+    </div>
+  );
+
   const imagesData = [
     { image: bazaar, links: bazaarData },
     { image: finlab, links: finlabData },
     { image: fontanelle, links: fontanelleData },
     { image: optionsfy, links: optionsfyData },
     { image: ubisoft, links: ubisoftData },
+    { image: eshop, links: eshopData },
   ];
   return (
     <div className="bg-slate-800 min-h-screen lg:h-screen text-slate-200">

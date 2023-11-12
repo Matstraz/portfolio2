@@ -13,6 +13,7 @@ import {
   faGraduationCap,
   faBriefcase,
   faCodePullRequest,
+  faTriangleExclamation,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,6 +24,7 @@ const icons = {
   home: <FontAwesomeIcon icon={faHouseChimney} className="h-4" />,
   about: <FontAwesomeIcon icon={faAddressCard} className="h-4" />,
   projects: <FontAwesomeIcon icon={faDiagramProject} className="h-4" />,
+  warning: <FontAwesomeIcon icon={faTriangleExclamation} className="h-4" />,
   contactsInfinite: (
     <FontAwesomeIcon icon={faComments} className={`h-4 ${css(styles.tada2)}`} />
   ),

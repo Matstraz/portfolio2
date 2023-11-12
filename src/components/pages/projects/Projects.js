@@ -5,6 +5,8 @@ import fontanelle from "../../../assets/pics/fontanelle.jpg";
 import optionsfy from "../../../assets/pics/optionsfy.jpg";
 import eshop from "../../../assets/pics/eshop.png";
 import ubisoft from "../../../assets/pics/ubisoft.jpg";
+import poker from "../../../assets/pics/poker.png";
+import nazabot from "../../../assets/pics//nazabot.png";
 import icons from "../../../utils/Icons";
 import ImageCarouselZoom from "./ImageCarouselZoom";
 import Navbar from "../../common/Navbar";
@@ -107,6 +109,47 @@ export default function Projects() {
     </div>
   );
 
+  const pokerData = (
+    <div className="flex gap-2 justify-center items-center flex-col">
+      <div className="flex gap-4 justify-center items-center">
+        <a
+          href="https://texaspoker.netlify.app/"
+          className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+        >
+          Demo
+        </a>
+        <a
+          href="https://github.com/Matstraz/texasholdem"
+          className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+        >
+          {icons.githubMini} Code
+        </a>
+      </div>
+      <div className="flex gap-2 justify-center items-center border-2 px-1 md:px-3 text-sm">
+        {icons.warning}
+        <p>Under Construction</p>
+        {icons.warning}
+      </div>
+    </div>
+  );
+
+  const nazabotData = (
+    <div className="flex gap-4 justify-center items-center">
+      <a
+        href="https://nazabot2.netlify.app/"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+      >
+        Demo
+      </a>
+      <a
+        href="https://github.com/Matstraz/nazabot2.0"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+      >
+        {icons.githubMini} Code
+      </a>
+    </div>
+  );
+
   const imagesData = [
     { image: bazaar, links: bazaarData },
     { image: finlab, links: finlabData },
@@ -114,6 +157,8 @@ export default function Projects() {
     { image: optionsfy, links: optionsfyData },
     { image: ubisoft, links: ubisoftData },
     { image: eshop, links: eshopData },
+    { image: poker, links: pokerData },
+    { image: nazabot, links: nazabotData },
   ];
   return (
     <div className="bg-slate-800 min-h-screen lg:h-screen text-slate-200">

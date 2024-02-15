@@ -6,7 +6,8 @@ import optionsfy from "../../../assets/pics/optionsfy.jpg";
 import eshop from "../../../assets/pics/eshop.png";
 import ubisoft from "../../../assets/pics/ubisoft.jpg";
 import poker from "../../../assets/pics/poker.png";
-import nazabot from "../../../assets/pics//nazabot.png";
+import nazabot from "../../../assets/pics/nazabot.png";
+import wedding from "../../../assets/pics/wedding.png";
 import icons from "../../../utils/Icons";
 import ImageCarouselZoom from "./ImageCarouselZoom";
 import Navbar from "../../common/Navbar";
@@ -150,6 +151,23 @@ export default function Projects() {
     </div>
   );
 
+  const weddingData = (
+    <div className="flex gap-4 justify-center items-center">
+      <a
+        href="https://alessandraematteo2.netlify.app/"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+      >
+        Demo
+      </a>
+      <a
+        href="https://github.com/Matstraz/wedding2"
+        className="border-2 px-1 md:px-3 md:py-1 text-xl mt-3 md:mt-6"
+      >
+        {icons.githubMini} Code
+      </a>
+    </div>
+  );
+
   const imagesData = [
     { image: bazaar, links: bazaarData },
     { image: finlab, links: finlabData },
@@ -159,6 +177,7 @@ export default function Projects() {
     { image: eshop, links: eshopData },
     { image: poker, links: pokerData },
     { image: nazabot, links: nazabotData },
+    { image: wedding, links: weddingData },
   ];
   return (
     <div className="bg-slate-800 min-h-screen lg:h-screen text-slate-200">
